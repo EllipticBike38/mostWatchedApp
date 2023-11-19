@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mostWatchedApp';
+  started  = !false;
+
+  
+  constructor() { }
+
+  ngOnInit(): void {
+  }
 }
