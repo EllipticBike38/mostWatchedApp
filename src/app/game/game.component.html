@@ -1,0 +1,10 @@
+<app-compared-element *ngIf="started" />
+<app-compared-element *ngIf="started" isQuestion />
+<div class="centered" *ngIf="!started">
+    <button mat-raised-button color="primary">Start</button>
+    <h4>Highest Score Ever:0</h4>
+</div>
+<div class="centered">
+    <h4>Score:{{gameService.score}}</h4>
+    <h4>Highest Score:{{gameService.getBestScore() || '0'}}</h4>
+</div>
